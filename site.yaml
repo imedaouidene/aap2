@@ -20,7 +20,7 @@ tasks:
       msg: "Isolated paths mounted into execution node: {{ AWX_ISOLATIONS_PATHS }}"
   - name: "Read pre-existing file..."
     ansible.builtin.debug:
-      msg: "{{ lookup('file', '{{ myfile }}_read'
+      msg: "{{ lookup('file', '{{ myfile }}_read' }}"
   - name: "Write to a new file..."
     ansible.builtin.copy:
       dest: "{{ myfile }}_write"
