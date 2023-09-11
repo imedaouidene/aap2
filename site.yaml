@@ -1,7 +1,7 @@
-- name: my play
+- name: my play 
   hosts: all
   gather_facts: false
-  ignore_errors: yes
+  ignore_errors: false
   vars:
     period: 120
     myfile: /mydata/file
